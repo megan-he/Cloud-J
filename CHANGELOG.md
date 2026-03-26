@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [Unreleased] - TBD
 ### Changed
 - Changed the format statement in several verbose prints to avoid print errors
+- Replaced the gcc 12 compiler wtih gcc 15 in the MacOS GitHub action
 
 ## [8.0.2] - 2015-03-25
 ### Added
