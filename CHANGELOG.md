@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Changed
 - Changed the format statement in several verbose prints to avoid print errors
 - Replaced the gcc 12 compiler wtih gcc 15 in the MacOS GitHub action
+- Updated GitHub Action `checkout@v4` (which is deprecated) to `checkout@v6`
 
 ## [8.0.2] - 2015-03-25
 ### Added

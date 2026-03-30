@@ -23,7 +23,7 @@ jobs:
       FC: gfortran-${{ matrix.gcc_version }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install dependencies
         run: brew install netcdf netcdf-fortran
