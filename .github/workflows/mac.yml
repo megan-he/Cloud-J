@@ -17,13 +17,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        gcc_version: [12, 13, 14]
+        gcc_version: [13, 14, 15]
         build_type: [Debug, Release]
     env:
       FC: gfortran-${{ matrix.gcc_version }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install dependencies
         run: brew install netcdf netcdf-fortran
