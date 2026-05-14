@@ -779,9 +779,9 @@ MODULE CLDJ_FJX_SUB_MOD
             write(6,'(i4,35f7.2)') L,(SKPERD(I,L), I=NW2+1,NWS2+2),SKPERD(S_+1,L)+SKPERD(S_+2,L)
          enddo
          write(6,'(a)') ' Fast-J ----J-values----'
-         write(6,'(1x,a,72(a6,3x))') 'L=  ',(TITLEJX(K), K=1,NJX)
+         write(6,'(1x,a,*(a6,3x))') 'L=  ',(TITLEJX(K), K=1,NJX)
          do L = LU,1,-1
-            write(6,'(i3,1p, 72e9.2)') L,(VALJXX(L,K),K=1,NJX)
+            write(6,'(i3,1p, *(e9.2))') L,(VALJXX(L,K),K=1,NJX)
          enddo
             
       endif   ! end of LPRTJ if

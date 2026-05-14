@@ -115,7 +115,7 @@
 
       ! AN_ :  max # of FJX aerosols in layer (needs NDX for each)
 #ifdef MODEL_GEOSCHEM
-      integer, parameter :: AN_=37
+      integer, parameter :: AN_=42
 #elif MODEL_STANDALONE
       integer, parameter :: AN_=25
 #endif
@@ -172,7 +172,7 @@
       ! A_   = dim = max no. of Aerosol Mie sets (input data) not including
       !        clouds and SSA
 #ifdef MODEL_GEOSCHEM
-      integer, parameter ::  A_=56
+      integer, parameter ::  A_=63 ! for BrC, MH 5/6/26
 #elif MODEL_STANDALONE
       integer, parameter ::  A_=40
 #endif
